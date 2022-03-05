@@ -17,19 +17,21 @@
     <link rel="stylesheet" href="./styled.css">
   </head>
   <body>
-    <div class="quote-box">
-      <h1 class="title"></h1>
-      <p class="text"></p>
-      <picture>
-        <source media="(min-width:768px)" srcset="images/pattern-divider-desktop.svg">
-        <img src="images/pattern-divider-mobile.svg" alt="">
-      </picture>
-      <div>
+    <main>
+      <div class="main__quote-box">
+        <h1 class="title"></h1>
+        <p class="text"></p>
+        <picture>
+          <source media="(min-width:768px)" srcset="images/pattern-divider-desktop.svg">
+          <img src="images/pattern-divider-mobile.svg" alt="">
+        </picture>
+      </div>
+      <div class="main__btn">
         <button onclick="fetchAdvice()">
           <img src="./images/icon-dice.svg" alt="dice" />
         </button>
       </div>
-    </div>
+    </main>
   </body>
 
   <script src="./app.js"></script>

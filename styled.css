@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
 
+
+:root {
+  --font-size: 28px;
+}
+
 body {
   background: #202733;
   display: flex;
@@ -13,36 +18,48 @@ body {
   box-sizing: border-box;
 }
 
-.quote-box {
+main {
   width: 540px;
   box-shadow: 30px 50px 80px;
   background: hsl(217, 19%, 24%);
   border-radius: 15px;
-  height: 332px;
+  /* height: 332px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.quote-box picture {
+
+.main__quote-box picture {
   display: flex;
   justify-content: center;
 }
 
-.quote-box button {
-  background-color: hsl(150, 100%, 66%);
-  padding: 1.25rem;
-  border: none;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.quote-box__btn {
   display: flex;
-  bottom: 14rem;
+  justify-content: center;
 }
 
-.quote-box picture img {
+.main__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main__btn button {
+  background-color: #52ffa8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  bottom: -2rem;
+}
+
+.main__quote-box picture img {
   position: relative;
 }
 
-.quote-box button:hover {
+.main__btn button:hover {
   box-shadow: 0px 0px 50px 0px  hsl(150, 100%, 66%);
   cursor: pointer;
 }
@@ -57,7 +74,7 @@ body {
 }
 
 .text {
-  font-size: 28px;
+  font-size: var(--font-size);
   text-align: center;
   margin-left: 48px;
   margin-right: 48px;
