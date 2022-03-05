@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
+
+body {
+  background: #202733;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.quote-box {
+  width: 540px;
+  box-shadow: 30px 50px 80px;
+  background: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  height: 332px;
+}
+
+.quote-box picture {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-box button {
+  background-color: hsl(150, 100%, 66%);
+  padding: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  bottom: 14rem;
+  cursor: pointer;
+}
+
+.quote-box picture img {
+  position: relative;
+}
+
+.quote-box button:hover {
+  background-color: hsl(150, 59%, 54%);
+  box-shadow: 0px -1px 19px 1px hsl(150, 59%, 54%);
+  
+}
+
+.title {
+  letter-spacing: 4.09px;
+  font-size: 13px;
+  color: hsl(150, 59%, 54%);
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.text {
+  font-size: 28px;
+  text-align: center;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 24px;
+  color: hsl(193, 38%, 86%);
+}

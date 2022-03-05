@@ -14,89 +14,23 @@
 
     <title>Frontend Mentor | Advice generator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
-
-      body {
-        background: #202733;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: "Manrope", sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .quote-box {
-        width: 540px;
-        box-shadow: 30px 50px 80px;
-        background: hsl(217, 19%, 24%);
-        border-radius: 15px;
-        height: 332px;
-      }
-
-      .quote-box picture {
-        display: flex;
-        justify-content: center;
-      }
-
-      .quote-box button {
-        background-color: hsl(150, 100%, 66%);
-        padding: 1.25rem;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        bottom: 14rem;
-      }
-
-      .quote-box picture img {
-        /* background-color: hsl(0, 0%, 100%); */
-        position: relative;
-      }
-
-      .quote-box button:hover {
-        background-color: hsl(150, 59%, 54%);
-      }
-
-      .title {
-        letter-spacing: 4.09px;
-        font-size: 13px;
-        color: hsl(150, 59%, 54%);
-        display: flex;
-        justify-content: center;
-        margin-top: 48px;
-      }
-
-      .text {
-        font-size: 28px;
-        text-align: center;
-        margin-left: 48px;
-        margin-right: 48px;
-        margin-top: 24px;
-        color: hsl(193, 38%, 86%)
-      }
-    </style>
+    <link rel="stylesheet" href="./styled.css">
   </head>
   <body>
     <div class="quote-box">
-      <h1 class="title">Advice #117</h1>
-      <p class="text">“It is easy to sit up and take notice, what's difficult is getting up and taking action.”</p>
+      <h1 class="title"></h1>
+      <p class="text"></p>
       <picture>
-        <source media="(min-width:768px)" srcset="images/pattern-divider-mobile.svg">
-        <img src="images/pattern-divider-desktop.svg" alt="">
+        <source media="(min-width:768px)" srcset="images/pattern-divider-desktop.svg">
+        <img src="images/pattern-divider-mobile.svg" alt="">
       </picture>
       <div>
-        <button>
+        <button onclick="fetchAdvice()">
           <img src="./images/icon-dice.svg" alt="dice" />
         </button>
       </div>
     </div>
   </body>
+
+  <script src="./app.js"></script>
 </html>
